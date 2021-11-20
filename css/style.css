@@ -1,0 +1,108 @@
+body,
+html{
+    height: 90%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+    position: relative;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+/*
+fixed = parallax
+scroll = normal
+*/
+background-attachment: fixed;
+}
+
+
+.pimg1 {
+    background-image: url('../images/img1.jpg');
+    min-height: 90%;
+}
+
+.pimg2 {
+    background-image: url('../images/img2.jpg');
+    min-height: 90%;
+}
+
+.pimg3 {
+    background-image: url('../images/img3.jpg');
+    min-height: 90%;
+}
+
+
+
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    background-color:rgb(221, 56, 180);
+    color: #ddd;
+   
+}
+
+.section-dark{
+    background-color: cadetblue;
+    color: #ddd;
+    height: 300px;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.ptext .border {
+    background-color: rgb(213, 6, 231);
+    color: #fff;
+    padding: 20px;
+}
+
+.ptext .border.trans {
+    background-color: transparent;
+}
+
+@media(max-width:580px) {
+
+    .pimg1,
+    .pimg2,
+    .pimg3  {
+        background-attachment: scroll;
+    }
+}
+
+/*maps*/
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:1000px;
+    width:1400px;
+    position:absolute;
+}
+
